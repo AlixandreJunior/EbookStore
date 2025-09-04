@@ -1,0 +1,176 @@
+# Arquivos do sistema macOS
+.DS_Store
+
+# Banco de dados local do Django
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivo JSON (pode ser seu arquivo de dados local, ajuste se precisar)
+db.json
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log                   # arquivos de log gerados pelo Django
+local_settings.py       # arquivo de configuração local, se existir
+media/                  # arquivos enviados pelos usuários (uploads)
+staticfiles/            # arquivos estáticos coletados (se você usar collectstatic)
+static/                 # às vezes, se você tiver um diretório estático no projeto
+# Ignore migrations compiladas (opcional, geralmente não se ignora migrations)
+# **/migrations/*.pyc
+# **/migrations/*.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# UV
+uv.lock
+
+# poetry
+poetry.lock
+poetry.toml
+
+# pdm
+pdm.lock
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582; e.g. pyflow, pdm
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# Abstra AI
+.abstra/
+
+# Visual Studio Code
+.vscode/
+
+# Ruff cache
+.ruff_cache/
+
+# PyPI config
+.pypirc
+
+# Cursor AI editor
+.cursorignore
+.cursorindexingignore
