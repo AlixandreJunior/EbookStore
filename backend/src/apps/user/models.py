@@ -26,9 +26,31 @@ class User(AbstractUser):
         verbose_name = "User"
         verbose_name_plural = "Users"
 
+    USER_ROLES = [
+        ("client", "Cliente"),
+        ("affiliate", "Afiliado"),
+        ("supporter", "Supporter"),
+    ]
+    
+    role = models.CharField(max_length=20, choices=USER_ROLES, default="client")
     phone = models.CharField(max_length=15, unique=True, validators=[validate_br_phone])
     cpf = models.CharField(max_length=11, unique=True, validators=[validate_cpf]
 )
     photo = models.ImageField(upload_to="users/photos/", blank=True, null=True)
+
     def __str__(self):
         return self.username
+
+class Coupon(models.Model):
+    class Meta:
+        app_label = "user"
+        verbose_name = "Coupon"
+        verbose_name_plural = "Coupons"
+
+    code = models.CharField(max_length=20, unique=True)
+    affiliate = models.ForeignKey(User, on_delete=models.CASCADE, related_name="coupons")
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return (f'Cupom de {self.affiliate.username}')
