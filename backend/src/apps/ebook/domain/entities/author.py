@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class Author:
+class AuthorEntity:
     id: int
     bio: str
     weblink: str

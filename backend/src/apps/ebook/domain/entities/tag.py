@@ -5,7 +5,7 @@ from apps.ebook.domain.value_objects.slug import Slug
 
 
 @dataclass(frozen=True)
-class Tag:
+class TagEntity:
     id: int
     name: str
     slug: Slug
