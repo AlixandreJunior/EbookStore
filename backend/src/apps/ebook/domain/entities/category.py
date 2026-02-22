@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Self
 
 from apps.ebook.domain.value_objects.category.icon import Icon
-from apps.ebook.domain.value_objects.category.slug import Slug
+from apps.ebook.domain.value_objects.slug import Slug
 
 
 @dataclass(frozen=True)
