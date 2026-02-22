@@ -12,5 +12,4 @@ class Publication:
     slug: str
     cover: bytes
     description: str
-    author: str
     language: Language
